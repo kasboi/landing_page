@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy-blue: #13183f;
+  --orange-six: #fd7e14;
+  --pink-seven: #d6336c;
+  --violet-eight: #6741d9;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--navy-blue);
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 600;
+
+  color: #fff;
+  border: none;
+  padding: 1.8rem 3rem;
+  border-radius: 5rem;
+}
+
+.btn-nav {
+  background-color: var(--navy-blue);
+}
+
+/* Header Section */
+header {
+  padding: 3rem 2rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header-text h1 {
+  color: var(--navy-blue);
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.header-text p {
+  color: #999;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.btn-header {
+  align-self: flex-start;
+  background-image: linear-gradient(
+    to bottom,
+    var(--orange-six) 20%,
+    var(--pink-seven)
+  );
+}
+
+.header-img {
+  max-width: 100%;
+}
+
+/* SECTION CARDS */
+.cards {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.intro-card {
+  background-image: linear-gradient(
+    to bottom,
+    var(--orange-six) 5%,
+    var(--pink-seven)
+  );
+  padding: 4rem 3rem;
+  border-radius: 2rem;
+}
+
+.intro-card p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.icon-card {
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+  padding: 5rem 3.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1.2rem;
+}
+
+.icon-card__icon_box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--orange-six),
+    var(--pink-seven)
+  );
+  position: absolute;
+  top: -3rem;
+}
+
+.icon-card__icon_box .material-symbols-outlined {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.icon-card h2 {
+  color: var(--navy-blue);
+  font-weight: 800;
+}
+
+.icon-card p {
+  color: #999;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.icon-card a {
+  color: var(--pink-seven);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+footer {
+  padding: 4rem 2rem;
+  background-color: var(--navy-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-footer {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.btn-footer {
+  background-image: linear-gradient(
+    to bottom,
+    var(--violet-eight),
+    var(--pink-seven)
+  );
+}
