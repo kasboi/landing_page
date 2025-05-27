@@ -89,6 +89,7 @@ header {
 /* SECTION CARDS */
 .cards {
   padding: 2rem;
+  margin-top: -5rem;
   display: flex;
   flex-direction: column;
   gap: 4.5rem;
@@ -180,4 +181,63 @@ footer {
     var(--violet-eight),
     var(--pink-seven)
   );
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    overflow: hidden;
+  }
+  nav {
+    padding: 3rem 6rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 0 6rem;
+    min-height: 40rem;
+  }
+
+  .header-text {
+    flex-basis: 55%;
+    flex-shrink: 0;
+    gap: 3rem;
+  }
+
+  .header-text h1 {
+    font-size: 4rem;
+  }
+
+  .header-text p {
+    font-size: 2rem;
+  }
+
+  picture {
+    flex-basis: 45%;
+    position: relative;
+  }
+
+  .header-img {
+    max-width: revert;
+    width: 50rem;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+  }
+
+  .cards {
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 6rem;
+    row-gap: 8rem;
+  }
+
+  .intro-card,
+  .icon-card {
+    flex-basis: 45%;
+    padding: 3.5rem 3rem;
+  }
 }
